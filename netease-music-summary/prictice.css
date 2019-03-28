@@ -1,0 +1,159 @@
+.m-page.z-enter {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+.m-page {
+    visibility: hidden;
+    opacity: 0;
+}
+.f-link, .f-page {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    touch-action: none;
+}
+element.style {
+    transform: scale(0.5);
+}
+.m-page-14 .art, .m-page-14 .lines {
+    position: absolute;
+    left: 0;
+    width: 750px;
+}
+.m-page-14 .art {
+    bottom: 0;
+    height: 1334px;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    /* -webkit-transform-origin: bottom left; */   /*浏览器兼容问题*/
+    transform-origin: bottom left;
+}
+
+.m-page-14 .man, .m-page-14 .manwrap {
+    position: absolute;
+    width: 486px;
+    height: 494px;
+}
+.m-page-14 .manwrap {
+    right: 0;
+    bottom: 0;
+}
+.m-page-14 .shoubi {
+    position: absolute;
+    left: 70px;
+    top: -115px;
+    background-image: url(//s5.music.126.net/static_public/5c21db8d4684556c72180904/shoubi.dfdeb7747a98b98266ff5b0713024c87.png);
+    width: 246px;
+    height: 270px;
+    -webkit-animation: p14-shoubi 1.3s steps(1) infinite;
+    animation: p14-shoubi 1.3s steps(1) infinite;
+}
+@keyframes p14-shoubi{
+    0% {
+        background-position: 0 0;
+    }
+    8.33% {
+        background-position: -246px 0;
+    }
+    16.67% {
+        background-position: -492px 0;
+    }
+    25% {
+        background-position: -738px 0;
+    }
+    33.33% {
+        background-position: -984px 0;
+    }
+    41.67% {
+        background-position: -1230px 0;
+    }
+    50% {
+        background-position: -1476px 0;
+    }
+    58.33% {
+        background-position: -1722px 0;
+    }
+    66.67% {
+        background-position: -1968px 0;
+    }
+    75% {
+        background-position: -2214px 0;
+    }
+    83.33% {
+        background-position: -2460px 0;
+    }
+    91.67% {
+        background-position: -2706px 0;
+    }
+    100% {
+        background-position: -2952px 0;
+    }
+}
+.m-page-14 .man {
+    top: 0;
+    left: 0;
+    background: url(//s5.music.126.net/static_public/5c21db8d4684556c72180904/man.fafe9d20caf92e672faf6cac0506c94b.png) no-repeat;
+}
+.m-page-14 .man, .m-page-14 .manwrap {
+    position: absolute;
+    width: 486px;
+    height: 494px;
+}
+.m-page-14 .tou {
+    position: absolute;
+    left: 220px;
+    top: -5px;
+    width: 94px;
+    height: 101px;
+    background: url(//s5.music.126.net/static_public/5c21db8d4684556c72180904/tou.763e9f0545a28bfbc642f5d8db77c9d5.png) no-repeat;
+    /* -webkit-animation: p14-tou 1.3s steps(1) infinite; */
+    animation: p14-tou 1.3s steps(1) infinite;
+}
+@keyframes p14-tou{
+    0% {
+        background-position: 0 0;
+    }
+    8.33% {
+        background-position: -94px 0;
+    }
+    16.67% {
+        background-position: -188px 0;
+    }
+    25% {
+        background-position: -282px 0;
+    }
+    33.33% {
+        background-position: -376px 0;
+    }
+    41.67% {
+        background-position: -470px 0;
+    }
+    50% {
+        background-position: -564px 0;
+    }
+    58.33% {
+        background-position: -658px 0;
+    }
+    66.67% {
+        background-position: -752px 0;
+    }
+    75% {
+        background-position: -846px 0;
+    }
+    83.33% {
+        background-position: -940px 0;
+    }
+    91.67% {
+        background-position: -1034px 0;
+    }
+    100% {
+        background-position: -1128px 0;
+    }
+}
