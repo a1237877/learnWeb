@@ -7,6 +7,9 @@
   overflow: hidden;
   position: relative;
 }
+.ui.navbar .header {
+  transition: all 0.4s;
+}
 .ui.navbar .header img {
   width: 98px;
 }
@@ -15,10 +18,12 @@
 }
 .ui.navbar .menu {
   margin-left: 103px;
+  transform: all 0.4s;
 }
 .ui.navbar .menu .item {
   display: inline-block;
   font-size: 18px;
+  font-weight: 300;
   color: #000;
   line-height: 25px;
   padding-top: 26px;
@@ -30,6 +35,22 @@
 .ui.navbar .search-icon {
   flex: 1;
   text-align: right;
+}
+.ui.navbar .search-form {
+  position: absolute;
+  transform: translateY(-120px);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.ui.navbar .searching .search-form {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.ui.navbar .searching .header,
+.ui.navbar .searching .menu,
+.ui.navbar .searching .menu-icon {
+  transform: translateY(80px);
+  opacity: 0;
 }
 @media only screen and (max-width: 767px) {
   .ui.navbar .content {
@@ -48,4 +69,50 @@
   .ui.navbar .search-icon {
     flex: 0;
   }
+}
+.ui.hero {
+  background-color: #f0f0f0;
+}
+.ui.hero .item {
+  overflow: hidden;
+  position: relative;
+}
+.ui.hero .item .content {
+  display: flex;
+  align-items: center;
+  height: 696px;
+}
+.ui.hero .item .content .ui.container {
+  position: relative;
+  z-index: 2;
+}
+.ui.hero .item .header {
+  width: 291px;
+  height: 67px;
+  font-size: 48px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  line-height: 67px;
+}
+.ui.hero .item .sub.header {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  line-height: 25px;
+  letter-spacing: 3px;
+}
+.ui.hero .item .description {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  line-height: 25px;
+}
+.ui.hero .item img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100%;
+  object-fit: cover;
 }

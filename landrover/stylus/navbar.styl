@@ -1,38 +1,55 @@
 .ui.navbar
-    background-color #fff
+  background-color #fff;
+  .content
+    display flex
+    align-items center
+    overflow hidden
+    position relative
+  .header
+      transition all .4s
+  .header img
+    width 98px
+  .menu-icon
+    display none
+  .menu
+    margin-left 103px
+    transform all .4s
+    .item
+      display inline-block
+      font-size 18px
+      font-weight 300
+      color rgba(0,0,0,1)
+      line-height 25px
+      padding-top 26px
+      padding-bottom 35px
+      &:not(:first-child)
+        margin-left 64px
+  .search-icon
+    flex 1
+    text-align right 
+  .search-form
+    position absolute
+    transform translateY(-120px)
+    opacity 0
+    transition all .5s
+  .searching .search-form
+    opacity 1
+    transform translateY(0px)
+  .searching
+    .header, .menu, .menu-icon
+      transform translateY(80px)
+      opacity 0
+
+@media only screen and (max-width: 767px)
+  .ui.navbar
     .content
-        display flex
-        align-items center
-        overflow hidden
-        position relative
-    .header img 
-        width 98px
+      justify-content space-between
+      padding-top 9px
+    .content .menu
+      display none
+    .header img
+      width 56px
     .menu-icon
-        display none
-    .menu
-        margin-left 103px
-        .item
-            display inline-block
-            font-size 18px
-            color rgba(0,0,0,1)
-            line-height 25px
-            padding-top 26px
-            padding-bottom 35px
-            &:not(:first-child)  //除了第一个元素外其他都加上样式
-                margin-left 64px
+      display block
     .search-icon
-        flex 1
-        text-align right
-@media only screen and (max-width:767px)
-    .ui.navbar
-        .content
-          justify-content space-between   //在3个元素中间添加间距
-          padding-top 9px
-        .content .menu
-          display none
-        .header img 
-            width 56px
-        .menu-icon
-            display block
-        .search-icon
-            flex 0
+      flex 0
